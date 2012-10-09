@@ -1,4 +1,4 @@
-GitHub Markup
+miniRedis
 =============
 
 Extremely small Redis client in PHP.
@@ -14,4 +14,4 @@ Usage
     echo "\n";
     echo $redis->read(); // abc - result of 'GET test'
 
-Supports Multi-bulk reply (MGET, HKEYS, etc)
+Supports multi-bulk reply (MGET, HKEYS, etc).
