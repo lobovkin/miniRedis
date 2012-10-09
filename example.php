@@ -1,8 +1,8 @@
 <?php
 require 'miniRedis.php';
 $redis = new miniRedis();
-$redis->write('set test abc');
-$redis->write('get test');
-echo $redis->read(); // OK - result of 'set test abc'
+$redis->write('SET test abc');
+$redis->write('GET test');
+echo $redis->read(); // OK - result of 'SET test abc'
 echo "\n";
-echo $redis->read(); // abc - result of 'get test'
+echo $redis->read(); // abc - result of 'GET test'
